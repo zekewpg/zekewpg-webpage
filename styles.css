@@ -1,0 +1,40 @@
+/* styles.css */
+
+/* basic css reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-small {
+
+    height: 200px;
+    opacity: 5;
+}
+
+.map-icon   {
+
+}
+
+.map {
+    height: 50px;
+    width: auto;
+    margin: 20px;  
+}
+
+.header {
+    background: powderblue;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
