@@ -1,46 +1,69 @@
+<!-- 16/4/2023: Going to work off off basic template from Flex Crash Course for now -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Man Adrift</title>
-    <link rel="stylesheet" href="styles.css"> <!-- my stles sheet-->
-
-    <!--google fotns-->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
-    <style>
-      body {
-        font-family: Roboto, serif;
-        font-size: 48px;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>zekewpg - A Man Adrift</title>
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">zekewpg</div>
+      <ul class="nav">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-   <!--Set up the body into a basic layout that I can use flex with-->
+  <header class="header">
+    <div class="container">
+      <div>
+        <h1>A Man Adrift</h1>
+        <p>
+          Welcome to my personal website. A place for random things and a canvas for
+           my learning journey with webdev and programming.
+        </p>
+      </div>
+      <img src="./images/grid.svg" alt="zekewpg logo" />
+    </div>
+  </header>
 
-   <div class="page">
-
-        <div class="header">
-            <img class="logo-small" src="images/zekewpg-logo-small-alpha.png"/>
-            <a class="title-text">A Man Adrift</a>
-            <a class="map-icon" href=" https://www.travellerspoint.com/map/#/trip/1360743" 
-            target="_blank" alt="map of world" ><img class="map" src="images/folding-map.png" title="A Map Of My Journey"/></a>
-        </div>
-
-        <div class="content">
-
-
-        </div>
-
-        <div class="footer">
-
-
-        </div>
-   </div>
-
+  <section class="boxes">
+    <div class="container">
+      <div class="box">
+        <h2>Where Am I?</h2>
+        <p>Here's a link to a map, showing my travel since i left home in September '22:
+        </p>
+        <a href="https://www.travellerspoint.com/map/#/trip/1360743" target="_blank">
+        <img class="map-icon" src="/images/folding-map.png"  alt="a map icon" class="map"/>
+        </a>
+      </div>
+      <div class="box">
+        <h2>What Am I Listening To Today?</h2>
+        <p>Big Fan of Campman Pond's Electric Caruso. It's haunting and I can't
+          stop listening to it! Head over to Band Camp and check it out.
+        </p>
+        <iframe class="motd" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2766238544/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://chapmanpondmusic.bandcamp.com/album/electric-caruso">Electric Caruso by Chapman Pond Music</a></iframe>
+      </div>
+      <div class="box">
+        <h2>What Am I Doing Today?</h2>
+        <p>Did some work on Flex Box and studied some Serbo-Croatian words. Proslava!
+        </p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
